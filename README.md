@@ -1,18 +1,22 @@
-# mcp-blockchair
+# @pipeworx/blockchair
 
-Blockchair MCP — multi-chain block explorer (free tier, keyless).
+[Blockchair](https://blockchair.com) MCP — multi-chain block explorer (Bitcoin, Ethereum, Litecoin, BCH, Doge, Dash, ZEC, XRP, Stellar, Monero, Cardano, EOS, …). Free tier keyless (~30 req/min).
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `stats` | Chain-wide stats. |
-| `block` | Block details by hash or height. |
-| `transaction` | Transaction details by txid. |
-| `address` | Address dashboard (balance + recent txs). |
-| `node` | Node software stats (sync status, version, latest block, …). |
+- `stats(chain)` — chain-wide stats (height, hashrate, supply, …)
+- `block(chain, hash_or_height)` — block details
+- `transaction(chain, txid)` — transaction details
+- `address(chain, address)` — address dashboard
+- `node(chain)` — node software stats
+
+`chain` is one of: `bitcoin`, `bitcoin-cash`, `litecoin`, `bitcoin-sv`, `dogecoin`, `dash`, `groestlcoin`, `zcash`, `ecash`, `ethereum`, `mixin`, `monero`, `stellar`, `ripple`, `cardano`, `eos`.
+
+## Data source
+
+`https://api.blockchair.com/<chain>/`
 
 ## Quick Start
 
@@ -28,7 +32,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +56,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
