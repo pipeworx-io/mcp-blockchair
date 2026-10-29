@@ -1,0 +1,90 @@
+[
+  {
+    "name": "stats",
+    "description": "Fetch chain-wide blockchain statistics (block count, transaction volume, hash rate, mempool size, circulation, etc.) for a given chain (bitcoin, ethereum, dogecoin, and 12 others).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "chain"
+      ]
+    }
+  },
+  {
+    "name": "block",
+    "description": "Block details by hash or height.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chain": {
+          "type": "string"
+        },
+        "hash_or_height": {
+          "type": "string",
+          "description": "Block hash (hex) or numeric height as string."
+        }
+      },
+      "required": [
+        "chain",
+        "hash_or_height"
+      ]
+    }
+  },
+  {
+    "name": "transaction",
+    "description": "Transaction details by txid.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chain": {
+          "type": "string"
+        },
+        "txid": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "chain",
+        "txid"
+      ]
+    }
+  },
+  {
+    "name": "address",
+    "description": "Address dashboard (balance + recent txs).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chain": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "chain",
+        "address"
+      ]
+    }
+  },
+  {
+    "name": "node",
+    "description": "Node software stats (sync status, version, latest block, …).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "chain"
+      ]
+    }
+  }
+]
