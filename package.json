@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-blockchair",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Blockchair MCP — multi-chain block explorer (free tier, keyless).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "blockchair",
     "gatewaySlug": "blockchair",
-    "sourceHash": "v1-578f3cbcce4d8dcc1e739bf1f760f61c2fd0d56b0cdcb8ddb5b4de26c4a1a513",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-74ba96813d62add933ed68ef1d0d347b0cdd2704669257b2e7e65ddc000b52e4",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
